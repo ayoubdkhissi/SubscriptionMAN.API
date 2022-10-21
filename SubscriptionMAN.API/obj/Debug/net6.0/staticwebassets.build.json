@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "bS2s+dO5c2r+/7Qyw6ewc1gvWLiPx/nF15cE7t+33L4=",
+  "Source": "SubscriptionMAN.API.Presentation",
+  "BasePath": "_content/SubscriptionMAN.API.Presentation",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

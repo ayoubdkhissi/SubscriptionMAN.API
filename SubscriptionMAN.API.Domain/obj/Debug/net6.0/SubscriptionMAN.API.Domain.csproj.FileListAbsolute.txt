@@ -1,0 +1,12 @@
+C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Domain\bin\Debug\net6.0\SubscriptionMAN.API.Domain.deps.json
+C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Domain\bin\Debug\net6.0\SubscriptionMAN.API.Domain.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Domain\bin\Debug\net6.0\SubscriptionMAN.API.Domain.pdb
+C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Domain\obj\Debug\net6.0\SubscriptionMAN.API.Domain.csproj.AssemblyReference.cache
+C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Domain\obj\Debug\net6.0\SubscriptionMAN.API.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Domain\obj\Debug\net6.0\SubscriptionMAN.API.Domain.AssemblyInfoInputs.cache
+C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Domain\obj\Debug\net6.0\SubscriptionMAN.API.Domain.AssemblyInfo.cs
+C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Domain\obj\Debug\net6.0\SubscriptionMAN.API.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Domain\obj\Debug\net6.0\SubscriptionMAN.API.Domain.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Domain\obj\Debug\net6.0\refint\SubscriptionMAN.API.Domain.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Domain\obj\Debug\net6.0\SubscriptionMAN.API.Domain.pdb
+C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Domain\obj\Debug\net6.0\ref\SubscriptionMAN.API.Domain.dll
