@@ -51,6 +51,8 @@ public class AuthController : Controller
                 .GenerateToken(authRequest.Username);
             response.RefreshToken = _refershTokenGenerator.GenerateRefreshToken(authRequest.Username);
 
+            // Removing old refresh token
+            await _refreshTokenRepository.DeleteAll(authRequest.Username);
             // Storing the refresh token in the database
             await _refreshTokenRepository.Create(new RefreshToken 
             { 
