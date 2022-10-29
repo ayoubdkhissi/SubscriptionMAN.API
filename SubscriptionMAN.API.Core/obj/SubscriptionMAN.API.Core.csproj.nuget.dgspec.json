@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Application\\SubscriptionMAN.API.Application.csproj": {}
+    "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Core\\SubscriptionMAN.API.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Application\\SubscriptionMAN.API.Application.csproj": {
+    "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Core\\SubscriptionMAN.API.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Application\\SubscriptionMAN.API.Application.csproj",
-        "projectName": "SubscriptionMAN.API.Application",
-        "projectPath": "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Application\\SubscriptionMAN.API.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Core\\SubscriptionMAN.API.Core.csproj",
+        "projectName": "SubscriptionMAN.API.Core",
+        "projectPath": "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Core\\SubscriptionMAN.API.Core.csproj",
         "packagesPath": "C:\\Users\\Agent-47\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Application\\obj\\",
+        "outputPath": "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
