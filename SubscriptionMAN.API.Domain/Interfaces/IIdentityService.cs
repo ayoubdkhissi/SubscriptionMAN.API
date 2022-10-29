@@ -11,4 +11,5 @@ public interface IIdentityService
     Task<Result> RegisterAsync(string userName, string email, string phoneNumber, string password);
 
     Task<Result> AuthenticateAsync(string userName, string password);
+
 }

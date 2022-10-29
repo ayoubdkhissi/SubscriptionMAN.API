@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubscriptionMAN.API.Presentation", "SubscriptionMAN.API\SubscriptionMAN.API.Presentation.csproj", "{33B87B12-03F8-4EBE-8D5F-C71BAE3D008F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubscriptionMAN.API.Presentation", "SubscriptionMAN.API.Presentation\SubscriptionMAN.API.Presentation.csproj", "{33B87B12-03F8-4EBE-8D5F-C71BAE3D008F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubscriptionMAN.API.Core", "SubscriptionMAN.API.Domain\SubscriptionMAN.API.Core.csproj", "{A3E6C1A3-CB19-4BF5-BE86-3595D4A8A8E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubscriptionMAN.API.Core", "SubscriptionMAN.API.Domain\SubscriptionMAN.API.Core.csproj", "{A3E6C1A3-CB19-4BF5-BE86-3595D4A8A8E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubscriptionMAN.API.Infrastructure", "SubscriptionMAN.API.Infrastructure\SubscriptionMAN.API.Infrastructure.csproj", "{D7B3507B-05A0-47ED-A31A-F811D79A035C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubscriptionMAN.API.Infrastructure", "SubscriptionMAN.API.Infrastructure\SubscriptionMAN.API.Infrastructure.csproj", "{D7B3507B-05A0-47ED-A31A-F811D79A035C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

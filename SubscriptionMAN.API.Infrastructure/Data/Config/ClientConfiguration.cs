@@ -25,5 +25,7 @@ public class ClientConfiguration : IEntityTypeConfiguration<Client>
 
         // Index on Name, because a lot of search will be executed upon it
         builder.HasIndex(c => c.FullName);
+
+
     }
 }
