@@ -4,14 +4,14 @@
     "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Presentation\\SubscriptionMAN.API.Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Domain\\SubscriptionMAN.API.Core.csproj": {
+    "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Core\\SubscriptionMAN.API.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Domain\\SubscriptionMAN.API.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Core\\SubscriptionMAN.API.Core.csproj",
         "projectName": "SubscriptionMAN.API.Core",
-        "projectPath": "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Domain\\SubscriptionMAN.API.Core.csproj",
+        "projectPath": "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Core\\SubscriptionMAN.API.Core.csproj",
         "packagesPath": "C:\\Users\\Agent-47\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,8 +91,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Domain\\SubscriptionMAN.API.Core.csproj": {
-                "projectPath": "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Domain\\SubscriptionMAN.API.Core.csproj"
+              "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Core\\SubscriptionMAN.API.Core.csproj": {
+                "projectPath": "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Core\\SubscriptionMAN.API.Core.csproj"
               }
             }
           }
@@ -116,6 +116,10 @@
               "version": "[6.0.10, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.10, )"
             },
@@ -176,6 +180,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Core\\SubscriptionMAN.API.Core.csproj": {
+                "projectPath": "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Core\\SubscriptionMAN.API.Core.csproj"
+              },
               "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Infrastructure\\SubscriptionMAN.API.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\SubscriptionMAN.API\\SubscriptionMAN.API.Infrastructure\\SubscriptionMAN.API.Infrastructure.csproj"
               }

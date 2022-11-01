@@ -25,14 +25,14 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(c =>
 {
-    string connetion_string = builder.Configuration.GetConnectionString("MysqlAppConnection");
-    c.UseMySql(connetion_string, ServerVersion.AutoDetect(connetion_string));
+    string connetion_string = builder.Configuration.GetConnectionString("AppDBConnection");
+    c.UseSqlServer(connetion_string);
 });
 
 builder.Services.AddDbContext<IdentityUserDbContext>(c =>
 {
-    string connetion_string = builder.Configuration.GetConnectionString("MysqlIdentityConnection");
-    c.UseMySql(connetion_string, ServerVersion.AutoDetect(connetion_string));
+    string connetion_string = builder.Configuration.GetConnectionString("IdentityDBConnection");
+    c.UseSqlServer(connetion_string);
 });
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()

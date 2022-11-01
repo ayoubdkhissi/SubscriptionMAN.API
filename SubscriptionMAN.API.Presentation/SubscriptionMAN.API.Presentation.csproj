@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SubscriptionMAN.API.Core\SubscriptionMAN.API.Core.csproj" />
     <ProjectReference Include="..\SubscriptionMAN.API.Infrastructure\SubscriptionMAN.API.Infrastructure.csproj" />
   </ItemGroup>
 

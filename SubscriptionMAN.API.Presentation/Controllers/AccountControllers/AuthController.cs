@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using SubscriptionMAN.API.Core.Constants;
 using SubscriptionMAN.API.Core.Interfaces;
 using SubscriptionMAN.API.Infrastructure.Identity.Models;
 using SubscriptionMAN.API.Infrastructure.Identity.Repository;

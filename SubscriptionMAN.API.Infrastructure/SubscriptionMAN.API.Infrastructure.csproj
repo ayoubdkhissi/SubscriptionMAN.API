@@ -10,12 +10,13 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.2" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.24.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SubscriptionMAN.API.Domain\SubscriptionMAN.API.Core.csproj" />
+    <ProjectReference Include="..\SubscriptionMAN.API.Core\SubscriptionMAN.API.Core.csproj" />
   </ItemGroup>
 
 </Project>

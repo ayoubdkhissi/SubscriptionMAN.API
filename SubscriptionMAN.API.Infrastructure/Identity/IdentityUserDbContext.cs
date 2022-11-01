@@ -17,12 +17,17 @@ public class IdentityUserDbContext : IdentityDbContext<ApplicationUser>
     public IdentityUserDbContext(DbContextOptions<IdentityUserDbContext> options)
         : base(options)
     {
-
     }
 
-    protected override void OnModelCreating(ModelBuilder builder)
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        base.OnModelCreating(builder);
-        builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        base.OnModelCreating(modelBuilder);
+        
+        modelBuilder.Entity<RefreshToken>()
+            .HasOne(refreshToken => refreshToken.User)
+            .WithMany(user => user.RefreshTokens)
+            .HasForeignKey(refreshToken => refreshToken.UserName)
+            .HasPrincipalKey(user => user.UserName);
     }
+
 }
