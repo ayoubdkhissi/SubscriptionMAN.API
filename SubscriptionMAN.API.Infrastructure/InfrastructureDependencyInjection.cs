@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using SubscriptionMAN.API.Core.Interfaces;
+using SubscriptionMAN.API.Core.Interfaces.Repository;
 using SubscriptionMAN.API.Infrastructure.Identity;
 using SubscriptionMAN.API.Infrastructure.Identity.Repository;
 using SubscriptionMAN.API.Infrastructure.Services;
+using SubscriptionMAN.API.Infrastructure.Services.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +28,8 @@ public static class InfrastructureDependencyInjection
         services.AddScoped<IRefreshTokenValidator, RefreshTokenValidator>();
         services.AddScoped<IRefershTokenGenerator, RefreshTokenGenerator>();
         services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
+
+        services.AddScoped<ISubscriptionServiceRepository, SubscriptionServiceRepository>();
 
 
         return services;
