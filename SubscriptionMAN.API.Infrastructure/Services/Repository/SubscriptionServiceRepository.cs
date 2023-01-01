@@ -5,6 +5,7 @@ using SubscriptionMAN.API.Infrastructure.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,34 +17,41 @@ public class SubscriptionServiceRepository : ISubscriptionServiceRepository
     public SubscriptionServiceRepository(AppDbContext appDbContext)
     {
         _appDbContext = appDbContext;
+
     }
 
-    public async Task<SubscriptionService> GetSubscriptionService(int id)
+    public Task<bool> DeleteSubscriptionServiceAsync(SubscriptionService subscriptionService)
     {
-        return await _appDbContext.SubscriptionServices.FirstOrDefaultAsync(ss => ss.Id == id);
+        throw new NotImplementedException();
     }
 
-    public IEnumerable<SubscriptionService> GetSubscriptionServices()
+    public Task<SubscriptionService> GetSubscriptionServiceAsync(int id)
     {
-        return _appDbContext.SubscriptionServices;
+        throw new NotImplementedException();
     }
 
-    public void InsertSubscriptionService(SubscriptionService subscriptionService)
+    public Task<IEnumerable<SubscriptionService>> GetSubscriptionServicesAsync()
     {
-        _appDbContext.SubscriptionServices.Add(subscriptionService);
+        throw new NotImplementedException();
     }
 
-
-    public void UpdateSubscriptionService(SubscriptionService subscriptionService)
+    public async Task<bool> InsertSubscriptionServiceAsync(SubscriptionService subscriptionService)
     {
-        _appDbContext.Entry(subscriptionService).State = EntityState.Modified;
+        try
+        {
+
+            await _appDbContext.SubscriptionServices.AddAsync(subscriptionService);
+            await _appDbContext.SaveChangesAsync();
+            return true;
+        }
+        catch
+        {
+            return false;
+        }
     }
 
-    public void save()
+    public Task<bool> UpdateSubscriptionServiceAsync(SubscriptionService subscriptionService)
     {
-        _appDbContext.SaveChangesAsync();
+        throw new NotImplementedException();
     }
-
-
-
 }

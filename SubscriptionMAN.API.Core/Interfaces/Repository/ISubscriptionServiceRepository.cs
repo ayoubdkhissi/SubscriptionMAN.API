@@ -9,10 +9,10 @@ namespace SubscriptionMAN.API.Core.Interfaces.Repository;
 public interface ISubscriptionServiceRepository
 {
 
-    IEnumerable<SubscriptionService> GetSubscriptionServices();
-    Task<SubscriptionService> GetSubscriptionService(int id);
-    void InsertSubscriptionService(SubscriptionService subscriptionService);
-    void UpdateSubscriptionService(SubscriptionService subscriptionService);
-    void save();
+    Task<IEnumerable<SubscriptionService>> GetSubscriptionServicesAsync();
+    Task<SubscriptionService> GetSubscriptionServiceAsync(int id);
+    Task<bool> InsertSubscriptionServiceAsync(SubscriptionService subscriptionService);
+    Task<bool> UpdateSubscriptionServiceAsync(SubscriptionService subscriptionService);
+    Task<bool> DeleteSubscriptionServiceAsync(SubscriptionService subscriptionService);
 
 }
