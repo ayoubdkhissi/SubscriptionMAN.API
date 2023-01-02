@@ -143,3 +143,9 @@ C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\Subscript
 C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Presentation\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Presentation\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Presentation\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Presentation\bin\Debug\net6.0\Microsoft.AspNetCore.OData.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Presentation\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Presentation\bin\Debug\net6.0\Microsoft.OData.Core.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Presentation\bin\Debug\net6.0\Microsoft.OData.Edm.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Presentation\bin\Debug\net6.0\Microsoft.OData.ModelBuilder.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\SubscriptionMAN.API\SubscriptionMAN.API.Presentation\bin\Debug\net6.0\Microsoft.Spatial.dll

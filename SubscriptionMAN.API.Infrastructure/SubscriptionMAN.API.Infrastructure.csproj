@@ -19,4 +19,8 @@
     <ProjectReference Include="..\SubscriptionMAN.API.Core\SubscriptionMAN.API.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\Commands\" />
+  </ItemGroup>
+
 </Project>

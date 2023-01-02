@@ -13,4 +13,8 @@
     <None Remove="AppServices\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Interfaces\Commands\" />
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,5 @@
-﻿using SubscriptionMAN.API.Core.Entities;
+﻿using SubscriptionMAN.API.Core.Constants;
+using SubscriptionMAN.API.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,9 @@ namespace SubscriptionMAN.API.Core.Interfaces.Repository;
 public interface ISubscriptionServiceRepository
 {
 
-    Task<IEnumerable<SubscriptionService>> GetSubscriptionServicesAsync();
+    Task<IEnumerable<SubscriptionService>> 
+        GetSubscriptionServicesAsync(int pageNumber = PaginationConstants.DefaultPageNumber, 
+        int PageSize = PaginationConstants.DefaultPageSize);
     Task<SubscriptionService> GetSubscriptionServiceAsync(int id);
     Task<bool> InsertSubscriptionServiceAsync(SubscriptionService subscriptionService);
     Task<bool> UpdateSubscriptionServiceAsync(SubscriptionService subscriptionService);

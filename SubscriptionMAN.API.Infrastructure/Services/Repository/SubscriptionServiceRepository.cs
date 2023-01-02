@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SubscriptionMAN.API.Core.Constants;
 using SubscriptionMAN.API.Core.Entities;
 using SubscriptionMAN.API.Core.Interfaces.Repository;
 using SubscriptionMAN.API.Infrastructure.Data;
@@ -30,9 +31,14 @@ public class SubscriptionServiceRepository : ISubscriptionServiceRepository
         throw new NotImplementedException();
     }
 
-    public Task<IEnumerable<SubscriptionService>> GetSubscriptionServicesAsync()
+    public async Task<IEnumerable<SubscriptionService>> 
+        GetSubscriptionServicesAsync(int pageNumber = PaginationConstants.DefaultPageNumber,
+        int PageSize = PaginationConstants.DefaultPageSize)
     {
-        throw new NotImplementedException();
+        return await _appDbContext.SubscriptionServices
+            .Skip((pageNumber - 1) * PageSize)
+            .Take(PageSize)
+            .ToListAsync();
     }
 
     public async Task<bool> InsertSubscriptionServiceAsync(SubscriptionService subscriptionService)
