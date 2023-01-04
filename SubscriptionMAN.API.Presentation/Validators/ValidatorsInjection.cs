@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using SubscriptionMAN.API.Presentation.Utils.Requests;
+using SubscriptionMAN.API.Presentation.Utils.Responses;
 
 namespace SubscriptionMAN.API.Presentation.Validators;
 
@@ -9,7 +10,7 @@ public static class ValidatorsInjection
     {
         services.AddScoped<IValidator<RegisterRequest>, RegisterDtoValidator>();
         
-        services.AddScoped<IValidator<SubscriptionServiceDTO>, SubscriptionServiceDtoValidator>();
+        services.AddScoped<IValidator<SubscriptionServiceForListingDTO>, SubscriptionServiceDtoValidator>();
 
         return services;
     }
