@@ -33,6 +33,7 @@ public static class InfrastructureDependencyInjection
 
         services.AddScoped<ISubscriptionServiceRepository, SubscriptionServiceRepository>();
         services.AddScoped<IGetUserSubscriptionServicesQuery, GetUserSubscriptionServicesQuery>();
+        services.AddScoped<IGetTotalNumberOfUserSubscriptionServices, GetTotalNumberOfUserSubscriptionServices>();
         services.AddScoped<IGetSubscriptionServiceTotalNumberOfClientsQuery, GetSubscriptionServiceTotalNumberOfClientsQuery>();
         services.AddScoped<IGetSubscriptionServiceNumberOfActiveClientsQuery, GetSubscriptionServiceNumberOfActiveClientsQuery>();
         return services;

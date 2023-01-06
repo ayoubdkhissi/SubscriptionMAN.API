@@ -18,13 +18,15 @@ public class SubscriptionServiceController : Controller
     private readonly ISubscriptionServiceRepository _subscriptionServiceRepository;
     private readonly IGetUserSubscriptionServicesQuery _getUserSubscriptionServicesQuery;
     private readonly IValidator<SubscriptionServiceForListingDTO> _subscriptionServiceValidator;
+    private readonly IGetTotalNumberOfUserSubscriptionServices _getTotalNumberOfUserSubscriptionServices;
     private readonly IGetSubscriptionServiceTotalNumberOfClientsQuery _getSubscriptionServiceTotalNumberOfClientsQuery;
     private readonly IGetSubscriptionServiceNumberOfActiveClientsQuery _getSubscriptionServiceNumberOfActiveClientsQuery;
 
-    public SubscriptionServiceController(ISubscriptionServiceRepository subscriptionServiceRepository,
-        IValidator<SubscriptionServiceForListingDTO> subscriptionServiceValidator,
-        IMapper mapper,
+    public SubscriptionServiceController(IMapper mapper,
+        ISubscriptionServiceRepository subscriptionServiceRepository,
         IGetUserSubscriptionServicesQuery getUserSubscriptionServicesQuery,
+        IValidator<SubscriptionServiceForListingDTO> subscriptionServiceValidator,
+        IGetTotalNumberOfUserSubscriptionServices getTotalNumberOfUserSubscriptionServices,
         IGetSubscriptionServiceTotalNumberOfClientsQuery getSubscriptionServiceTotalNumberOfClientsQuery,
         IGetSubscriptionServiceNumberOfActiveClientsQuery getSubscriptionServiceNumberOfActiveClientsQuery)
     {
@@ -34,6 +36,7 @@ public class SubscriptionServiceController : Controller
         _getUserSubscriptionServicesQuery = getUserSubscriptionServicesQuery;
         _getSubscriptionServiceTotalNumberOfClientsQuery = getSubscriptionServiceTotalNumberOfClientsQuery;
         _getSubscriptionServiceNumberOfActiveClientsQuery = getSubscriptionServiceNumberOfActiveClientsQuery;
+        _getTotalNumberOfUserSubscriptionServices = getTotalNumberOfUserSubscriptionServices;
     }
 
 
@@ -106,5 +109,15 @@ public class SubscriptionServiceController : Controller
 
         }
         return Ok(subscriptionServiceDTO);
+    }
+
+
+    [Authorize]
+    [HttpGet("api/getTotalNumberOfSubscriptionServices")]
+    public async Task<ActionResult<int>> GetCountOfSubscriptionServicesAsync()
+    {
+        var count = await _getTotalNumberOfUserSubscriptionServices
+            .GetTotalNumberOfUserSubscriptionServicesAsync(User.Identity.Name);
+        return Ok(count);
     }
 }
